@@ -1,0 +1,50 @@
+<!-- MODAL LOGIN -->
+<div class="modal fade" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true" style="opacity: .9; margin: auto; ">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content" style="background-color: #fff">
+      <div class="modal-header ">
+        <img src="https://www.flaticon.es/svg/static/icons/svg/1077/1077114.svg" style="width: 50px;height: auto;" />
+        <h4 class="modal-title" id="exampleModalLabel" style="margin:auto;">Inicia sesión</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="margin: auto; text-align: center;">
+        <div class="form-group">
+          <span>Email</span>
+          <div class="col-xs-10 col-xs-offset-1">
+            <input type="email" id="txtusuario" name="txtusuario" placeholder="Ingresa tu correo"
+              class="form-control Input" style="color: #818182; text-align: center;">
+          </div>
+          <sup><span id="error_usuario" class="text-danger"></span></sup>
+        </div>
+        <div class="form-group">
+          <span>Password</span>
+          <div class="col-xs-10 col-xs-offset-1">
+            <input type="password" id="txtpassword" name="txtpassword" placeholder="Ingresa tu contraseña"
+              class="form-control Input" style="color: #818182; text-align: center;">
+          </div>
+          <sup><span id="error_password" class="text-danger"></span></sup>
+        </div>
+
+      </div>
+      <div class="from-group modal-footer" Style="margin: auto; text-align: center; font-size: 12px;">
+        <div class="from-group" data-testid="register" style="width: 100%">
+          <a href="/falabella-pe/myaccount/passwordRecoverySearch.jsp">¿OLVIDASTE TU CONTRASEÑA?</a>
+        </div>
+
+        <div class="button" data-testid="login-button" style="width: 100%">
+          <button id="btn_iniciarsesion" data-testid="button" type="button" class="btn btn-info"
+            style="width: 100%;border-radius: 20px;">INICIAR SESIÓN</button>
+        </div>
+        <span style="width: 100%;">¿NO TIENES CUENTA?</span>
+        <div class="from-group" data-testid="register" style="width: 100%">
+          <button id="btn_registrar" data-testid="button" type="button" class="btn btn-info"
+            style="width: 60%; border-radius: 20px;">REGISTRARME</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- FIN MODAL LOGIN -->
+<router-outlet></router-outlet>
